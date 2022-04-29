@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	
+	<flow name="hello-muleFlow" doc:id="361735da-bead-4636-bb20-f1b748188383" >
+		<http:listener doc:name="Http Listener" doc:id="ed582183-dcb7-4793-ae48-0e126dfc15f4" config-ref="HTTP_Listener_config" path="hellomule"/>
+		<set-payload value="Hello Mule" doc:name="Set Payload" doc:id="5f5f467e-69a6-4a04-bc06-a55b78464322" />
+	</flow>
+</mule>
